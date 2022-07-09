@@ -7,7 +7,7 @@ Os arquivos deverão ser colocados na pasta `/home/pi/scripts/`
 
 Editar o crontab: `sudo crontab -e`
 
-Alterar os atributos do arquivo (ups_18650_lite.py)
+Alterar os atributos do arquivo (\ups_18650_lite.py)
 sudo chmod +x ups_18650_lite.py
 
 sudo /home/pi/scripts/executarpythonuos.sh
