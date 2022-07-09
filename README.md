@@ -1,6 +1,6 @@
 O objetivo desse procedimento é criar um arquivo json na pasta /dev/ com informações sobre a bateria do UPS versão Supervised.
 
-O arquivo python foi criado a partir do arquivo disponibilizado pelo fabricante que pode ser visto [aqui]:(https://github.com/linshuqin329/UPS-18650-Lite/blob/master/UPS_18650_Lite.py)
+O arquivo python foi criado a partir do arquivo disponibilizado pelo fabricante que pode ser visto ([aqui]:(https://github.com/linshuqin329/UPS-18650-Lite))
 
 
 Os arquivos deverão ser colocados na pasta `/home/pi/scripts/`
