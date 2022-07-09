@@ -1,4 +1,4 @@
-O objetivo desse procedimento é criar um arquivo json na pasta /dev/ com informações sobre a bateria do UPS versão Supervised.
+O objetivo desse procedimento é criar um arquivo json na pasta /dev/ com informações sobre a bateria do UPS (módulo de baterias 18650) versão Supervised do Home Assistant.
 
 O arquivo python foi criado a partir do arquivo `UPS_18650_Lite_v1.1.py`  disponibilizado pelo fabricante que pode ser visto [aqui](https://github.com/linshuqin329/UPS-18650-Lite)
 
