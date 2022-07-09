@@ -11,9 +11,10 @@ sudo chmod +x ups_18650_lite.py
 sudo /home/pi/scripts/executarpythonuos.sh
 
 Editar o crontab: `sudo crontab -e`
+
 Ele vai conter instruções para criação de uma pasta ups dentro da pasta do sistema /dev.
-O comando touch cria um arquivo vazio na pasta recém criada /dev/ups/. Em seguida são alterados os atributos desse arquivo para que possa ser escrito
-As instruções seguintes criam "timers" para chamar o batch  `executarpythonups` que executa o python ./ups_18650_lite.py periodicamente
+
+O comando touch cria um arquivo vazio na pasta recém criada /dev/ups/. Em seguida são alterados os atributos desse arquivo para que possa ser escrito. As instruções seguintes criam "timers" para chamar o batch  `executarpythonups` que executa o python ./ups_18650_lite.py periodicamente
 
 
 	@reboot mkdir /dev/ups
