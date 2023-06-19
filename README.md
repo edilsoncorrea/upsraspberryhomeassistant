@@ -25,6 +25,36 @@ O comando touch cria um arquivo vazio na pasta recém criada /dev/ups/. Em segui
 	* * * * * sleep 40; /home/pi/scripts/executarpythonups.sh
 ````
 
+No Home Assistant para ler os dados que são gravados no Json é necessário criar esses sensores no Configuration.yaml
+
+````
+
+  - platform: command_line
+    name: UPS 18650 Lite
+    scan_interval: 10
+    command_timeout: 30
+    json_attributes:
+      - capacidade
+      - voltagem
+    value_template: "{{ value_json.estado }}"
+    command: "cat /dev/ups/ups"
+    unique_id: ups_18650_lite
+    
+  - platform: template
+    sensors: 
+      voltagem_bateria_raspberry:
+        value_template: '{{ states.sensor.ups_18650_lite.attributes.voltagem|round(2) }}'
+        friendly_name: "Voltagem Bateria Raspberry"
+        unit_of_measurement: "V"
+        unique_id: voltagem_bateria_raspberry
+    
+      capacidade_bateria_raspberry:
+        value_template: '{{ states.sensor.ups_18650_lite.attributes.capacidade|round(2) }}'
+        friendly_name: "Capacidade Bateria Raspberry"
+        unit_of_measurement: "%"
+        unique_id: capacidade_bateria_raspberry
+	
+````	
 
 
 
