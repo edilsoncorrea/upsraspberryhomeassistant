@@ -25,7 +25,7 @@ O comando touch cria um arquivo vazio na pasta recém criada /dev/ups/. Em segui
 	* * * * * sleep 40; /home/pi/scripts/executarpythonups.sh
 ````
 
-No Home Assistant para ler os dados que são gravados no Json é necessário criar esses sensores no Configuration.yaml
+No Home Assistant para ler os dados que são gravados no Json é necessário criar esses sensores no configuration.yaml
 
 ````
 
